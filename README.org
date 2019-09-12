@@ -1,0 +1,11 @@
+* WebDb IV Recitation
+  Today we are practicing writing SQL schema with Foreign Key relationships,
+  writing helpers with join, and seeding the database
+
+** MVP
+   Write a database schema to hold a movie and the actors who worked on it.
+   Movies should have multiple actors, and actors should be able to be in
+   multiple movies. Each actor in the movie has a character name.
+
+** Stretch
+   Write a more general schema that is able to handle any type of crew member.
