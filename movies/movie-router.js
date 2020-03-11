@@ -8,8 +8,7 @@ router.get('/', (req, res) => {
     });
 });
 
-///get individual movie
-
+//get individual movie
 router.get('/:id', (req, res) => {
     const {id} = req.params;
     Movies.getById(id)
@@ -19,6 +18,15 @@ router.get('/:id', (req, res) => {
         }else{
             res.status(404).end();
         }
+    });
+});
+
+// 
+router.get('/:id/actors', (req, res) => {
+    const {id} = req.params;
+    Movies.getActorsByMovieId(id)
+    .then(actors => {
+            res.status(200).json(actors);
     });
 });
 module.exports = router;
