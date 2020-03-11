@@ -1,0 +1,15 @@
+{
+  "name": "webdb-iv-recitation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Kemberly-Eliscar/webdb-iv-recitation.git",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.20.11",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
