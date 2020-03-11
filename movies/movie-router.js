@@ -7,4 +7,18 @@ router.get('/', (req, res) => {
         res.status(200).json(movies)
     });
 });
+
+///get individual movie
+
+router.get('/:id', (req, res) => {
+    const {id} = req.params;
+    Movies.getById(id)
+    .then(movie => {
+        if (movie) {
+            res.status(200).json(movie);
+        }else{
+            res.status(404).end();
+        }
+    });
+});
 module.exports = router;
