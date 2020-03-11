@@ -21,7 +21,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
-// 
+// get actors that are in a specific movie
 router.get('/:id/actors', (req, res) => {
     const {id} = req.params;
     Movies.getActorsByMovieId(id)
