@@ -9,4 +9,7 @@ function getById(id) {
 }
 
 
-module.exports = {}
+module.exports = {
+    get,
+    getById
+}

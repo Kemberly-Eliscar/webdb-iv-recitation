@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const Movies = require('./movie-model');
 
-router.get('/', (res, req) => {
+router.get('/', (req, res) => {
     Movies.get()
     .then(movies => {
         res.status(200).json(movies)
